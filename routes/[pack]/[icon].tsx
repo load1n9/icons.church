@@ -12,11 +12,14 @@ export const handler = async (
     `https://raw.githubusercontent.com/iconify/icon-sets/master/json/${ctx.params.pack}.json`,
   )).json();
 
+  const icon = data.icons[ctx.params.icon];
+  const width = icon.width || data.info.width || data.info.height || 16;
+  const height = icon.height || data.info.height || data.info.width || 16;
   return new Response(
     `export default function GeneratedIcon({ width=16, height=16, color="currentColor", ...props }) {
   return (
-    <svg width={width} height={height} fill={color} viewBox="0 0 24 24" {...props} >
-      ${data.icons[ctx.params.icon].body}
+    <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} fill={color} viewBox="0 0 ${width} ${height}" {...props}>
+      ${icon.body}
     </svg>
   );
 }`,
