@@ -18,7 +18,7 @@ export const handler = async (
 }`,
     {
       headers: {
-        "Content-Type": "application/javascript",
+        "Content-Type": "text/jsx",
       },
     },
   );

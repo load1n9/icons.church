@@ -1,5 +1,4 @@
 import IconBrandGithub from "tabler_icons_tsx/brand-github.tsx";
-import DenoIcon from "https://freshicon.deno.dev/vscode-icons/file-type-light-deno";
 
 export default function Home() {
   return (
@@ -14,7 +13,7 @@ export default function Home() {
       <p class="mt-4 text-center text-[#1a202c]">
         To get started, visit the github repository{" "}
         <a href="https://github.com/load1n9/iconify" class="text-[#1a202c]">
-          here <IconBrandGithub width={24} height={24} /> <DenoIcon width={24} height={24} />
+          here <IconBrandGithub width={24} height={24} />
         </a>.
       </p>
     </div>
