@@ -5,9 +5,9 @@ iconify for fresh
 ## Usage
 
 ```tsx
-import AlarmClockIcon from 'https://freshicon.deno.dev/fluent-emoji-flat/alarm-clock';
+import DenoIcon from 'https://freshicon.deno.dev/vscode-icons/file-type-light-deno/';
 
 export default function MyComponent() {
-  return <AlarmClockIcon width={24} height={24} />;
+  return <DenoIcon width={24} height={24} />;
 }
 ```
