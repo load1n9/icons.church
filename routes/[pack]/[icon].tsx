@@ -23,9 +23,9 @@ export const handler = async (
  * License: [${data.info.license.title}](${data.info.license.url})
  * 
  */ 
-export default function GeneratedIcon({ width=16, height=16, color="currentColor", ...props }) {
+export default function GeneratedIcon(props) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} fill={color} viewBox="0 0 ${width} ${height}" {...props}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" {...props}>
       ${icon.body}
     </svg>
   );
