@@ -1,6 +1,6 @@
 # Iconify
 
-iconify api wrapper for fresh
+iconify for fresh
 
 ## Usage
 
@@ -8,6 +8,6 @@ iconify api wrapper for fresh
 import AlarmClockIcon from 'https://freshicon.deno.dev/fluent-emoji-flat/alarm-clock';
 
 export default function MyComponent() {
-  return <AlarmClockIcon />;
+  return <AlarmClockIcon width={24} height={24} />;
 }
 ```
