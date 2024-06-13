@@ -21,7 +21,6 @@ export const handler = async (
  * ${data.info.name} - ${ctx.params.icon}
  * Version: ${data.info.version}
  * License: [${data.info.license.title}](${data.info.license.url})
- * ![](data:image/svg+xml,"https://api.iconify.design/${ctx.params.pack}/${ctx.params.icon}.svg")
  * 
  */ 
 export default function GeneratedIcon(props) {
@@ -33,7 +32,7 @@ export default function GeneratedIcon(props) {
 }`,
     {
       headers: {
-        "Content-Type": "text/jsx",
+        "Content-Type": "text/tsx",
       },
     },
   );
