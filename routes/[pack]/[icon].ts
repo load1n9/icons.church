@@ -11,7 +11,7 @@ export const handler = async (
   return new Response(
     `export default function GeneratedIcon({ width=16, height=16, color="currentColor", ...props }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} fill={color} viewBox="0 0 24 24" {...props} >
+    <svg width={width} height={height} fill={color} viewBox="0 0 24 24" {...props} >
       ${data.icons[ctx.params.icon].body}
     </svg>
   );
