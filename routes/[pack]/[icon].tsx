@@ -16,7 +16,14 @@ export const handler = async (
   const width = icon.width || data.info.width || data.info.height || 16;
   const height = icon.height || data.info.height || data.info.width || 16;
   return new Response(
-    `export default function GeneratedIcon({ width=16, height=16, color="currentColor", ...props }) {
+    `
+/**
+ * ${data.info.name} - ${ctx.params.icon}
+ * Version: ${data.info.version}
+ * License: [${data.info.license.title}](${data.info.license.url})
+ * 
+ */ 
+export default function GeneratedIcon({ width=16, height=16, color="currentColor", ...props }) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} fill={color} viewBox="0 0 ${width} ${height}" {...props}>
       ${icon.body}
