@@ -23,7 +23,7 @@ export const handler = async (
  * License: [${data.info.license.title}](${data.info.license.url})
  * 
  */ 
-export default function GeneratedIcon(props) {
+export default function GeneratedIcon(props: any): any {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" {...props}>
       ${icon.body}
