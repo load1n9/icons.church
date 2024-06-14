@@ -1,13 +1,13 @@
-# Iconify
+# Icons.church
 
 iconify for fresh
 
 ## Usage
 
 ```tsx
-import DenoIcon from "https://freshicon.deno.dev/vscode-icons/file-type-light-deno/";
+import CheckIcon from "https://icons.church/lucide/badge-check";
 
 export default function MyComponent() {
-  return <DenoIcon width={24} height={24} />;
+  return <CheckIcon width={24} height={24} />;
 }
 ```

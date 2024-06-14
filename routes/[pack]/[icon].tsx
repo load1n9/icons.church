@@ -40,11 +40,11 @@ export default function GeneratedIcon(props: any): any {
 export default function ModulePage(ctx: PageProps) {
   return (
     <div class="container mx-auto p-4">
-      <h1 class="text-4xl text-center text-[#1a202c]">
+      <h1 class="text-4xl text-center text-[#4868a6] py-5 mb-5">
         {ctx.params.pack}/{ctx.params.icon}
       </h1>
-      <div class="mt-4 text-center text-gray-500 bg-slate-800 rounded-sm p-2">
-        import GeneratedIcon from "https://iconify.deno.dev/{ctx.params
+      <div class="mt-4 text-center text-gray-100 bg-slate-800 rounded-lg p-2">
+        import GeneratedIcon from "https://icons.church/{ctx.params
           .pack}/{ctx.params.icon}";
       </div>
     </div>

@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        holy: ["holy", "sans-serif"],
+      },
       colors: {
         primary: "#be185d",
         secondary: "#4338ca",
