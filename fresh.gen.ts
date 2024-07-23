@@ -6,7 +6,7 @@ import * as $_pack_icon_ from "./routes/[pack]/[icon].tsx";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $index from "./routes/index.tsx";
-import * as $Cloud from "./islands/Cloud.tsx";
+import * as $Neon from "./islands/Neon.tsx";
 import * as $Typing from "./islands/Typing.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -18,7 +18,7 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
-    "./islands/Cloud.tsx": $Cloud,
+    "./islands/Neon.tsx": $Neon,
     "./islands/Typing.tsx": $Typing,
   },
   baseUrl: import.meta.url,

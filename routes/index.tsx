@@ -1,5 +1,6 @@
 import IconBrandGithub from "tabler_icons_tsx/brand-github.tsx";
 import TypingAnimation from "../islands/Typing.tsx";
+import { NeonGradientCard } from "../islands/Neon.tsx";
 
 export default function Home() {
   const example: [string, string, string, string] = [
@@ -22,12 +23,14 @@ export default function Home() {
           </p>
         </div>
         <a class="btn btn-secondary " href="https://icon-sets.iconify.design/">Iconify Library</a>
-        <div class="mockup-code">
+        <NeonGradientCard>
+        <div class="mockup-code bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text">
           <pre data-prefix="1"><code>{example[0]}</code></pre>
           <pre data-prefix="2"><code>{example[1]}</code></pre>
           <pre data-prefix="3"><code>{example[2]}</code></pre>
           <pre data-prefix="4"><code>{example[3]}</code></pre>
         </div>
+        </NeonGradientCard>
         <div class="flex gap-4">
           <a
             href="https://github.com/load1n9/iconify"
