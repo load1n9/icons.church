@@ -1,4 +1,5 @@
 import { type Config } from "tailwindcss";
+import daisyui from "daisyui";
 
 export default {
   content: [
@@ -18,5 +19,6 @@ export default {
       },
     },
   },
-  plugins: [],
+  // deno-lint-ignore no-explicit-any
+  plugins: [daisyui as any],
 } satisfies Config;

@@ -43,9 +43,10 @@ export default function ModulePage(ctx: PageProps) {
       <h1 class="text-4xl text-center text-[#4868a6] py-5 mb-5">
         {ctx.params.pack}/{ctx.params.icon}
       </h1>
-      <div class="mt-4 text-center text-gray-100 bg-slate-800 rounded-lg p-2">
-        import GeneratedIcon from "https://icons.church/{ctx.params
-          .pack}/{ctx.params.icon}";
+      <div class="mockup-code">
+        <pre data-prefix="1"><code>import GeneratedIcon from "https://icons.church/{ctx.params
+          .pack}/{ctx.params.icon}";</code></pre>
+        <pre data-prefix="2"><code></code></pre>
       </div>
     </div>
   );
