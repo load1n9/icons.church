@@ -1,4 +1,5 @@
 import IconBrandGithub from "tabler_icons_tsx/brand-github.tsx";
+import TypingAnimation from "../islands/Typing.tsx";
 
 export default function Home() {
   const example: [string, string, string, string] = [
@@ -12,15 +13,15 @@ export default function Home() {
     <div class="container mx-auto p-4">
       <section class="w-full h-auto flex relative justify-center items-center flex-col pt-16 gap-16">
         <div>
-          <p
-            class={`pt-10 max-w-screen-sm mt-4 font-bold ${"font-holy"} pb-10 text-center text-2xl`}
-          >
-            Icons.church
-          </p>
+          <TypingAnimation
+            text="Icons.church"
+            className={`pt-10 max-w-screen-sm mt-4 font-bold ${"font-holy"} pb-10 text-center text-2xl`}
+          />
           <p class="text-sm text-gray-600 text-center">
             Iconify icons for Fresh
           </p>
         </div>
+        <a class="btn btn-secondary " href="https://icon-sets.iconify.design/">Iconify Library</a>
         <div class="mockup-code">
           <pre data-prefix="1"><code>{example[0]}</code></pre>
           <pre data-prefix="2"><code>{example[1]}</code></pre>
