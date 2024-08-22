@@ -25,7 +25,7 @@ export default function Home() {
     string,
   ] = [
     "async function getIcon() {",
-    "  const res = await fetch(`https://icons.church/fluent-emoji-flat/alarm-clock/svg`);",
+    "  const res = await fetch(`https://icons.church/ICON_FAMILY/ICON_NAME/svg`);",
     "  const svg = await res.text();",
     "  return svg;",
     "}",
@@ -41,60 +41,53 @@ export default function Home() {
   return (
     <div class="container mx-auto p-4">
       <section class="w-full h-auto flex relative justify-center items-center flex-col pt-16 gap-16">
-        <div class="pb-1">
+        <div class="pb-12">
           <TypingAnimation
             text="Icons.church"
-            className={`pt-10 max-w-screen-sm mt-4 font-bold ${"font-holy"} text-center text-2xl`}
+            className={`pt-10 max-w-screen-sm mt-4 font-bold ${"font-holy"} text-center text-4xl`}
           />
         </div>
-        <a
-          href="https://github.com/load1n9/iconify"
-          class="mb-10"
-        >
-          <IconBrandGithub class="w-6 h-6" />
-        </a>
-        <h2 class="text-2xl font-bold">
-          Use over 200k icons from Iconify in your Deno projects.
-        </h2>
-        <p class="text-gray-600">
-          Iconify is a unified icon framework that allows you to use over 200k
-          icons from various icon sets. You can use these icons in your Deno
+        <h2 class="text-3xl text-center text-gray-400">
+          Use over{" "}
+          <div class="stat-value text-transparent bg-clip-text bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1]">
+            200k
+          </div>{" "}
+          icons from{" "}
+          <a href="https://iconify.design/" class="underline decoration-wavy text-blue-300">Iconify</a>
+          {" "}
+          in your <a href="https://deno.com" class="underline decoration-wavy text-green-300">Deno</a>
+          {" "}
           projects with ease.
-        </p>
+        </h2>
       </section>
       <section class="w-full h-full flex relative justify-center items-center flex-col pt-16 gap-16">
         <h1 class="text-4xl font-bold mt-8">Getting Started</h1>
         <p class=" text-xl text-gray-400">
-          Step 1: Find an icon you like from the{" "}
+          Step 1: Find an icon you like from
         </p>
-        <div className="mockup-browser border-base-300 w-full border">
-          <div className="mockup-browser-toolbar">
-            <div className="input border-base-300 border">
-              <a class="underline" href="https://icon-sets.iconify.design/">
-                https://icon-sets.iconify.design/
-              </a>.
+        <NeonGradientCard>
+          <div className="mockup-browser bg-base-200 w-full border">
+            <div className="mockup-browser-toolbar">
+              <div className="input bg-base-200 border">
+                <a class="underline" href="https://icon-sets.iconify.design/">
+                  https://icon-sets.iconify.design/
+                </a>.
+              </div>
+            </div>
+            <div className="bg-base-200 h-80 flex justify-center border-t">
+              <iframe
+                src="https://icon-sets.iconify.design/"
+                class="w-full h-full border-none"
+              />
             </div>
           </div>
-          <div className="border-base-300 h-80 flex justify-center border-t">
-            <iframe
-              src="https://icon-sets.iconify.design/"
-              class="w-full h-full border-none"
-            />
-          </div>
-        </div>
-        <NeonGradientCard>
-          <img
-            src="./iconify.png"
-            alt="Iconify website"
-            class="w-full bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] rounded-2xl"
-          />
         </NeonGradientCard>
 
         <p class=" text-xl text-gray-400">
           Step 2: Copy the import statement.
         </p>
         <NeonGradientCard>
-          <div class="mockup-code bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text">
+          <div class="mockup-code">
             <pre data-prefix="1"><code>{example[0]}</code></pre>
           </div>
         </NeonGradientCard>
@@ -104,7 +97,7 @@ export default function Home() {
         </p>
 
         <NeonGradientCard>
-          <div class="mockup-code bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text">
+          <div class="mockup-code">
             <pre data-prefix="2"><code>{example[1]}</code></pre>
             <pre data-prefix="3"><code>{example[2]}</code></pre>
             <pre data-prefix="4"><code>{example[3]}</code></pre>
@@ -119,7 +112,7 @@ export default function Home() {
           our API.
         </p>
         <NeonGradientCard>
-          <div class="mockup-code bg-gradient-to-br from-[#ff2975] from-35% to-[#00FFF1] bg-clip-text">
+          <div class="mockup-code">
             <pre data-prefix="1"><code>{example2[0]}</code></pre>
             <pre data-prefix="2"><code>{example2[1]}</code></pre>
             <pre data-prefix="3"><code>{example2[2]}</code></pre>
@@ -139,8 +132,10 @@ export default function Home() {
       <section class="w-full h-auto flex relative justify-center items-center flex-col pt-16 gap-16">
         <h1 class="text-4xl font-bold mt-8">Contribute</h1>
         <p class=" text-xl text-gray-400">
-          If you would like to contribute to this project, please visit our
-          GitHub repository.
+          If you would like to contribute to this project, please visit our{" "}
+          <a href="https://github.com/load1n9/iconify" class="hover:underline">
+            GitHub repository
+          </a>
         </p>
         <div class="flex gap-4">
           <a
