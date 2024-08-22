@@ -62,14 +62,26 @@ export default function Home() {
           projects with ease.
         </p>
       </section>
-      <section class="w-full h-auto flex relative justify-center items-center flex-col pt-16 gap-16">
+      <section class="w-full h-full flex relative justify-center items-center flex-col pt-16 gap-16">
         <h1 class="text-4xl font-bold mt-8">Getting Started</h1>
         <p class=" text-xl text-gray-400">
           Step 1: Find an icon you like from the{" "}
-          <a class="underline" href="https://icon-sets.iconify.design/">
-            Iconify website
-          </a>.
         </p>
+        <div className="mockup-browser border-base-300 w-full border">
+          <div className="mockup-browser-toolbar">
+            <div className="input border-base-300 border">
+              <a class="underline" href="https://icon-sets.iconify.design/">
+                https://icon-sets.iconify.design/
+              </a>.
+            </div>
+          </div>
+          <div className="border-base-300 h-80 flex justify-center border-t">
+            <iframe
+              src="https://icon-sets.iconify.design/"
+              class="w-full h-full border-none"
+            />
+          </div>
+        </div>
         <NeonGradientCard>
           <img
             src="./iconify.png"
