@@ -23,8 +23,10 @@
     "tailwindcss": "npm:tailwindcss@3.4.1",
     "tailwindcss/": "npm:/tailwindcss@3.4.1/",
     "tailwindcss/plugin": "npm:/tailwindcss@3.4.1/plugin.js",
+    "tailwind-merge": "npm:tailwind-merge",
     "oak_commons/": "https://deno.land/x/oak_commons@0.1.1/",
-    "daisyui": "npm:daisyui"
+    "daisyui": "npm:daisyui",
+    "clsx": "npm:clsx"
   },
   "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" }
 }

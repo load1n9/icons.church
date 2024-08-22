@@ -53,9 +53,9 @@ export default function Home() {
             200k
           </div>{" "}
           icons from{" "}
-          <a href="https://iconify.design/" class="underline decoration-wavy text-blue-300">Iconify</a>
+          <a href="https://iconify.design/" class="text-blue-300">Iconify</a>
           {" "}
-          in your <a href="https://deno.com" class="underline decoration-wavy text-green-300">Deno</a>
+          in your <a href="https://deno.com" class="text-green-300">Deno</a>
           {" "}
           projects with ease.
         </h2>
