@@ -12,30 +12,8 @@ export default function Home() {
 
   const example2: [
     string,
-    string,
-    string,
-    string,
-    string,
-    string,
-    string,
-    string,
-    string,
-    string,
-    string,
-    string,
   ] = [
-    "async function getIcon() {",
-    "  const res = await fetch(`https://icons.church/ICON_FAMILY/ICON_NAME/svg`);",
-    "  const svg = await res.text();",
-    "  return svg;",
-    "}",
-    "function Icon() {",
-    '  const [svg, setSvg] = useState("");',
-    "  useEffect(() => {",
-    "    getIcon().then(setSvg);",
-    "  }, []);",
-    "  return <div dangerouslySetInnerHTML={{ __html: svg }} />;",
-    "}",
+    "<svg src='https://icons.church/api/ICON_FAMILY/ICON_NAME/svg' alt='ICON_NAME' />",
   ];
 
   return (
@@ -114,18 +92,6 @@ export default function Home() {
         <NeonGradientCard>
           <div class="mockup-code">
             <pre data-prefix="1"><code>{example2[0]}</code></pre>
-            <pre data-prefix="2"><code>{example2[1]}</code></pre>
-            <pre data-prefix="3"><code>{example2[2]}</code></pre>
-            <pre data-prefix="4"><code>{example2[3]}</code></pre>
-            <pre data-prefix="5"><code>{example2[4]}</code></pre>
-            <pre data-prefix="6"><code></code></pre>
-            <pre data-prefix="7"><code>{example2[5]}</code></pre>
-            <pre data-prefix="8"><code>{example2[6]}</code></pre>
-            <pre data-prefix="9"><code>{example2[7]}</code></pre>
-            <pre data-prefix="10"><code>{example2[8]}</code></pre>
-            <pre data-prefix="11"><code>{example2[9]}</code></pre>
-            <pre data-prefix="12"><code>{example2[10]}</code></pre>
-            <pre data-prefix="13"><code>{example2[11]}</code></pre>
           </div>
         </NeonGradientCard>
       </section>
