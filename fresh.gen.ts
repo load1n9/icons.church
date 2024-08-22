@@ -2,7 +2,9 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $_pack_icon_ from "./routes/[pack]/[icon].tsx";
+import * as $_pack_icon_index from "./routes/[pack]/[icon]/index.tsx";
+import * as $_pack_icon_svg from "./routes/[pack]/[icon]/svg.tsx";
+import * as $_pack_index from "./routes/[pack]/index.tsx";
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $index from "./routes/index.tsx";
@@ -12,7 +14,9 @@ import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
-    "./routes/[pack]/[icon].tsx": $_pack_icon_,
+    "./routes/[pack]/[icon]/index.tsx": $_pack_icon_index,
+    "./routes/[pack]/[icon]/svg.tsx": $_pack_icon_svg,
+    "./routes/[pack]/index.tsx": $_pack_index,
     "./routes/_404.tsx": $_404,
     "./routes/_app.tsx": $_app,
     "./routes/index.tsx": $index,
