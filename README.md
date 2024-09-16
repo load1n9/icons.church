@@ -8,7 +8,7 @@ Deno projects.
 
 ## Usage
 
-### Check Icon
+### Basic example
 
 ```tsx
 import CheckIcon from "https://icons.church/lucide/badge-check";
@@ -18,7 +18,7 @@ export default function MyComponent() {
 }
 ```
 
-### Animated loading spinner
+### Animated spinner
 
 ```tsx
 import SpinnerIcon from "https://icons.church/svg-spinners/3-dots-rotate";
