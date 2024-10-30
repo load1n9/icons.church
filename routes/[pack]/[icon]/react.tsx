@@ -27,7 +27,7 @@ export const handler = async (
  */ 
 export default function GeneratedIcon(props: any): any {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" {...props}>
       ${icon.body}
     </svg>
   );
