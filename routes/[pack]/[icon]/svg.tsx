@@ -8,10 +8,13 @@ export const handler = async (
     if (accepts(req, "application/*", "text/html") === "text/html") {
         return ctx.render();
     }
-    const data = await (await fetch(
+    const request = await fetch(
         `https://raw.githubusercontent.com/iconify/icon-sets/master/json/${ctx.params.pack}.json`,
-    )).json();
-
+    );
+    if (!request.ok) {
+        return new Response("Not found", { status: 404 });
+    }
+    const data = await req.json();
     const icon = data.icons[ctx.params.icon];
     const width = icon.width || data.info.width || data.info.height || 16;
     const height = icon.height || data.info.height || data.info.width || 16;
