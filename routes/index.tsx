@@ -13,7 +13,7 @@ export default function Home() {
   const example2: [
     string,
   ] = [
-    "<svg src='https://icons.church/api/ICON_FAMILY/ICON_NAME/svg' alt='ICON_NAME' />",
+    "<svg src='https://icons.church/ICON_FAMILY/ICON_NAME/svg' alt='ICON_NAME' />",
   ];
 
   return (
