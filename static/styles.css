@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "holy";
-    src: url("/HolySansMono.woff2");
+  font-family: "holy";
+  src: url("/HolySansMono.woff2");
 }
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
