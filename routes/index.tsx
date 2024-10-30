@@ -99,13 +99,13 @@ export default function Home() {
         <h1 class="text-4xl font-bold mt-8">Contribute</h1>
         <p class=" text-xl text-gray-400">
           If you would like to contribute to this project, please visit our{" "}
-          <a href="https://github.com/load1n9/iconify" class="hover:underline">
+          <a href="https://github.com/load1n9/icons.church" class="hover:underline">
             GitHub repository
           </a>
         </p>
         <div class="flex gap-4">
           <a
-            href="https://github.com/load1n9/iconify"
+            href="https://github.com/load1n9/icons.church"
             class="btn"
           >
             Learn More <IconBrandGithub class="w-6 h-6" />
